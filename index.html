@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev-Longen</title>
+    <link rel="stylesheet" href="frontend/dist/css/style.css"> <!-- Inclui o arquivo de estilo CSS -->
+</head>
+<body>
+    <header>
+        <h1 class="titulo_header">Seja muito bem vindo!</h1> <!-- Título do cabeçalho -->
+    </header>
+    <section>
+        <h1 class="perfil_user">Minhas informações pessoais:</h1> <!-- Título da seção de informações pessoais -->
+        <div class="foto_atualizado">
+            <img src="frontend/dist/img/125667107.jpeg" alt=""> <!-- Imagem de perfil -->
+        </div>
+        <div class="box_container">
+            <div class="perfil_info">
+                <!-- Informações pessoais -->
+                <p id="nome_atualizado">Nome: Iago</p>
+                <p id="idade_atualizado">Idade: 19</p>
+                <p id="estado_atualizado">Estado: SC</p>
+                <p id="cidade_atualizado">Cidade: Joinville</p>
+                <p id="bairro_atualizado">Bairro: Centro</p>
+                <p id="endereco_atualizado">Endereço: Teste</p>
+            </div>
+            <div class="biografia_info">
+                <p id="biografia_atualizado"> <!-- Biografia -->
+                    Olá, sou desenvolvedor e fiz esse site com muita dedicação e conhecimento,
+                    <br>espero que goste e sinta-se a vontade para testar as funcionalidades que o site propõem
+                </p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <form action="frontend/backend/php/inserir_dados.php" method="post" id="form_atualizacao">   
+            <h1 id="informacoes_texto"> Atualizar suas informações pessoais:</h1> <!-- Título da seção de atualização de informações -->
+            <div class="foto_perfil" id="foto_perfil" onclick="troca_foto_perfil()"> <!-- Div para selecionar imagem de perfil -->
+                <img src="frontend/dist/img/upload-icon-png-21.png" alt=""> <!-- Ícone para selecionar imagem -->
+                <input type="file" id="upload_perfil" accept="image/*"> <!-- Input para selecionar arquivo de imagem -->
+            </div>
+            <!-- Campos para atualização das informações pessoais -->
+            <input type="text" placeholder="Seu nome:" name="" id="nome_pessoal" maxlength="40">
+            <input type="number" placeholder="Sua idade:" id="idade_pessoal" maxlength="3">
+            <select name="estado" id="estado"> <!-- Select para escolher o estado -->
+                <option value="" id="">Selecione...</option>
+            </select>
+            <input type="text" name="" id="cidade_pessoal" placeholder="Sua Cidade:" maxlength="80">
+            <input type="text" placeholder="Seu Bairro:" name="" id="bairro_pessoal" maxlength="80">
+            <input type="text" placeholder="Seu endereço:" name="" id="endereco_pessoal" maxlength="80">
+            <textarea name="" id="biografia_pessoal" cols="30" rows="10" placeholder="Biografia:" maxlength="300"></textarea> <!-- Textarea para a biografia -->
+            <input type="submit" value="Atualizar dados" id="botao_atualizar"> <!-- Botão para atualizar os dados -->
+        </form>
+    </section>
+    <footer>
+        <h3>© Criado por desenvolvedor Iago Longen</h3> <!-- Rodapé -->
+    </footer>
+    <script src="frontend/dist/js/script.js"></script> <!-- Script principal -->
+    <script src="frontend/dist/js/update.js"></script> <!-- Script para atualização -->
+</body>
+</html>
