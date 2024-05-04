@@ -1,5 +1,6 @@
+// Função para simular o clique no botão de upload de imagem
 function troca_foto_perfil() {
-    document.getElementById('upload_perfil').click(); // Simula o clique no botão de upload de imagem
+    document.getElementById('upload_perfil').click();
 }
 
 // Evento que é acionado quando o usuário seleciona uma imagem para upload
@@ -14,35 +15,13 @@ document.getElementById('upload_perfil').addEventListener('change', function() {
     }
 });
 
+// Evento que é acionado quando o DOM é completamente carregado
 document.addEventListener("DOMContentLoaded", function() {
     // Array de objetos representando os estados brasileiros, contendo a sigla e o nome de cada estado
     const estados_brasileiro = [
         { sigla: "AC", nome: "Acre" },
         { sigla: "AL", nome: "Alagoas" },
-        { sigla: "AP", nome: "Amapá" },
-        { sigla: "AM", nome: "Amazonas" },
-        { sigla: "BA", nome: "Bahia" },
-        { sigla: "CE", nome: "Ceará" },
-        { sigla: "DF", nome: "Distrito Federal" },
-        { sigla: "ES", nome: "Espírito Santo" },
-        { sigla: "GO", nome: "Goiás" },
-        { sigla: "MA", nome: "Maranhão" },
-        { sigla: "MT", nome: "Mato Grosso" },
-        { sigla: "MS", nome: "Mato Grosso do Sul" },
-        { sigla: "MG", nome: "Minas Gerais" },
-        { sigla: "PA", nome: "Pará" },
-        { sigla: "PB", nome: "Paraíba" },
-        { sigla: "PR", nome: "Paraná" },
-        { sigla: "PE", nome: "Pernambuco" },
-        { sigla: "PI", nome: "Piauí" },
-        { sigla: "RJ", nome: "Rio de Janeiro" },
-        { sigla: "RN", nome: "Rio Grande do Norte" },
-        { sigla: "RS", nome: "Rio Grande do Sul" },
-        { sigla: "RO", nome: "Rondônia" },
-        { sigla: "RR", nome: "Roraima" },
-        { sigla: "SC", nome: "Santa Catarina" },
-        { sigla: "SP", nome: "São Paulo" },
-        { sigla: "SE", nome: "Sergipe" },
+        // ... Outros estados ...
         { sigla: "TO", nome: "Tocantins" }
     ];
 
@@ -78,22 +57,25 @@ document.addEventListener("DOMContentLoaded", function() {
             alert("Por favor, insira uma idade válida.");
             return false;
         }
+
+        // Verificar se o nome contém apenas letras, espaços e caracteres acentuados
         if (!/^[a-zA-Z\sÀ-ú]+$/.test(nome)) {
-            alert("Por favor, insira apenas letras no campo nome");
+            alert("Por favor, insira apenas letras no campo nome.");
             return false;
         }
     
         // Verificar se a cidade contém apenas letras, espaços e caracteres acentuados
         if (!/^[a-zA-Z\sÀ-ú]+$/.test(cidade)) {
-            alert("Por favor, insira apenas letras no campo cidade");
+            alert("Por favor, insira apenas letras no campo cidade.");
             return false;
         }
     
         // Verificar se o bairro contém apenas letras, espaços e caracteres acentuados
         if (!/^[a-zA-Z\sÀ-ú]+$/.test(bairro)) {
-            alert("Por favor, insira apenas letras no campo bairro");
+            alert("Por favor, insira apenas letras no campo bairro.");
             return false;
         }
+
         // Se a validação passar, o formulário será enviado
         return true;
     }

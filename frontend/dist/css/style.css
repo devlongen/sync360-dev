@@ -108,7 +108,8 @@ h3 {
 }
 
 /* Estilo para as fotos de perfil */
-.foto_perfil {
+.foto_perfil,
+.foto_padrao {
     width: 150px; 
     height: 150px; 
     border-radius: 50%; 
@@ -120,7 +121,8 @@ h3 {
 }
 
 /* Estilo para as imagens das fotos de perfil */
-.foto_perfil img {
+.foto_perfil img,
+.foto_padrao img {
     width: 100%; 
     height: 100%; 
     object-fit: cover; 
@@ -168,28 +170,8 @@ input[type="submit"]:hover {
     word-wrap: break-word; /* ou overflow-wrap: break-word; */
 }
 
-/* Estilo para a div de foto de perfil */
-.foto_padrao {
-    width: 150px; 
-    height: 150px; 
-    border-radius: 50%; 
-    overflow: hidden; 
-    position: relative; 
-    cursor: pointer; 
-    margin: 0 auto 30px; 
-    background-color: #f2f2f2; 
-}
-
-/* Estilo para a imagem de perfil */
-.foto_padrao img {
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover; 
-    border-radius: 50%; 
-}
-
 @media screen and (max-width: 768px) {
-    /* Adicione estilos específicos para telas menores aqui */
+    /* Estilos específicos para telas menores */
     .container {
         max-width: 95%; /* Reduz a largura do contêiner */
     }
