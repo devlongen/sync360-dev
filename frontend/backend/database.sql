@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: May 05, 2024 at 12:14 AM
+-- Generation Time: May 05, 2024 at 12:38 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 
@@ -45,7 +45,7 @@ CREATE TABLE `usuario` (
 --
 
 INSERT INTO `usuario` (`id_usuario`, `nome_usuario`, `idade_usuario`, `estado_usuario`, `cidade_usuario`, `bairro_usuario`, `endereco_usuario`, `biografia_usuario`, `data_atualizacao`, `imagem_usuario`) VALUES
-(4, 'Iago Longen', 19, 'SC', 'Joinville', 'Centro', 'Rua das palmeiras,321', 'Olá recrutador, seja muito bem-vindo ao site desenvolvido por mim para o processo seletivo. O site está disponível para qualquer funcionalidade que tenha sido proposta. Foi feito com dedicação e conhecimento. Espero que goste! Qualquer dúvida, pode entrar em contato pelo telefone (47) 98807-1571.', '2024-05-04 22:11:05', 'frontend/backend/php/img/125667107.jpeg');
+(1, 'Iago Longen ', 19, 'SC', 'Joinville', 'Centro', 'Rua das palmeiras,321', 'Olá recrutador, seja muito bem-vindo ao site desenvolvido por mim para o processo seletivo. O site está disponível para qualquer funcionalidade que tenha sido proposta. Foi feito com dedicação e conhecimento. Espero que goste! Qualquer dúvida, pode entrar em contato pelo telefone (47) 98807-1571.', '2024-05-04 22:34:31', 'frontend/backend/php/img/125667107.jpeg');
 
 --
 -- Indexes for dumped tables
@@ -65,7 +65,7 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT for table `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
