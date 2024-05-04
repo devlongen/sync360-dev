@@ -20,14 +20,14 @@
         </div>
         <div class="perfil_info">
             <!-- Informações pessoais -->
-            <p id="nome_atualizado">Nome: <?php echo $nome;?></p>
-            <p id="idade_atualizado">Idade: <?php echo $idade;?></p>
-            <p id="estado_atualizado">Estado: <?php echo $estado;?></p>
-            <p id="cidade_atualizado">Cidade: <?php echo $cidade;?></p>
-            <p id="bairro_atualizado">Bairro: <?php echo $bairro;?></p>
-            <p id="endereco_atualizado">Endereço: <?php echo $endereco;?></p>
+            <p id="nome_atualizado" ><strong>Nome:</strong> <?php echo $nome;?></p>
+            <p id="idade_atualizado"><strong>Idade:</strong> <?php echo $idade;?></p>
+            <p id="estado_atualizado"><strong>Estado:</strong> <?php echo $estado;?></p>
+            <p id="cidade_atualizado"><strong>Cidade:</strong> <?php echo $cidade;?></p>
+            <p id="bairro_atualizado"><strong>Bairro:</strong> <?php echo $bairro;?></p>
+            <p id="endereco_atualizado"><strong>Endereço:</strong> <?php echo $endereco;?></p>
             <p></p>
-            <p id="biografia_atualizado">Biografia: <?php echo $biografia;?></p>
+            <p id="biografia_atualizado"><strong>Biografia:</strong> <?php echo $biografia;?></p>
         </div>
     </section>
     <section class="secao_2">
